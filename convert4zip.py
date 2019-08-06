@@ -107,7 +107,7 @@ def convert_video(sourcefile, targetfile, pass_pass):
         resize1="-vf"
         resize2="scale=800:-1" # keeps the aspect ratio of the original file
     else:
-        resize1="-an" # dummy. if this variable is empty (i.e. "") the subsequent ffmpeg-command will fail.
+        resize1="-an" # dummy. if this variable is empty (i.e. "") the ffmpeg-command will fail.
         resize2="-an" # dummy. using a benign/harmless/non-dangerous command.
 
     command = [
